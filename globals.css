@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  --matjar-green: #008751;
+  --matjar-green-dark: #006b40;
+  --matjar-sand: #faf8f4;
+}
+
+html[dir="rtl"] body {
+  font-family: "Segoe UI", "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.card-soft {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 30px rgba(16, 24, 40, 0.07);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.btn-primary {
+  background: var(--matjar-green);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 0.9rem;
+  padding: 0.7rem 1.4rem;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-primary:hover { background: var(--matjar-green-dark); }
+.btn-primary:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.btn-ghost {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 600;
+  border-radius: 0.9rem;
+  padding: 0.7rem 1.2rem;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-ghost:hover { background: #e2e8f0; }
+
+.input-field {
+  width: 100%;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.9rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  outline: none;
+  transition: border 0.2s;
+  font-size: 0.95rem;
+}
+.input-field:focus { border-color: var(--matjar-green); box-shadow: 0 0 0 3px rgba(0,135,81,0.12); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Friday mode pattern */
+.friday-pattern {
+  background-image: radial-gradient(rgba(0,135,81,0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float-soft { animation: float-soft 4s ease-in-out infinite; }
+
+@media print {
+  .no-print { display: none !important; }
+}
+
+/* ===== Brand logo — crisp rendering on all screens ===== */
+:root {
+  --brand-blue: #1F3F8F;
+  --brand-blue-2: #2E86DE;
+  --brand-orange: #F58A1F;
+}
+.brand-logo-img {
+  display: block;
+  background: #ffffff;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+@media (max-width: 380px) {
+  .brand-tagline { display: none; }
+}

@@ -1,0 +1,7 @@
+/app/android/build/classes/sd/matjarak/app/MainActivity$1.class
+/app/android/build/classes/sd/matjarak/app/MainActivity$2.class
+/app/android/build/classes/sd/matjarak/app/MainActivity.class
+/app/android/build/classes/sd/matjarak/app/R$mipmap.class
+/app/android/build/classes/sd/matjarak/app/R$string.class
+/app/android/build/classes/sd/matjarak/app/R$style.class
+/app/android/build/classes/sd/matjarak/app/R.class

@@ -1,0 +1,2 @@
+/app/android/src/sd/matjarak/app/MainActivity.java
+/app/android/build/gen/sd/matjarak/app/R.java
